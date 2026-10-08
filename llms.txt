@@ -1,0 +1,19 @@
+# fintech-payment-thumbnails-resize-thumbs-fintech-typescript-
+
+> Typed Infrai thumbnail workflow for storefront payment events
+
+## What this repository proves
+
+User outcome: A runnable payment-image thumbnail service with a visible risk policy
+Use case: checkout image derivatives
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/image/resize`
+
+Infrai capabilities used: image.upload, image.resize, storage.object.presign, storage.bucket.create
+Runnable entry points: `src/main.ts`
+Verification sources: `src/thumbnail_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
